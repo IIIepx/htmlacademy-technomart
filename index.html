@@ -13,11 +13,27 @@
  <body>
   
   <header class="header header_index">
-    <div class="content content_index">
-      <div class="top-menu">
-        <div class="logo logo_header top-menu__logo">
-          <a class="link-common">Техномарт</a>
-        </div>
+    <div class="nav-menu">
+      <div class="content content_index content-index__nav-menu">
+        <a class="nav-menu__elem link-common logo nav-menu__elem_logo" href="#">Техномарт</a>
+        <form class="nav-menu__elem nav-menu__elem_form" method="post">
+          <span class="nav-menu__icon-font nav-menu__icon-font_search icon-search"></span>
+          <input class="nav-menu__input nav-menu__input_search" type="search" placeholder="Поиск:">
+          <input class="nav-menu__input nav-menu__input_submit" type="submit" value="">
+        </form>
+        <ul class="list-common nav-menu__elem  nav-menu__elem_list">
+          <li class="nav-menu__li nav-menu__li_bookmarks">
+            <span class="nav-menu__icon-font icon-bookmark"></span>
+            <a href="#" class="link-common nav-menu__link nav-menu__link_bookmarks">Закладки: 0</a>
+          </li>
+          <li class="nav-menu__li nav-menu__li_basket">
+            <span class="nav-menu__icon-font icon-basket"></span>
+            <a href="#" class="link-common nav-menu__link nav-menu__link_basket">Корзина: 0</a>
+          </li>
+          <li class="nav-menu__li nav-menu__li_order">
+            <a href="#" class="link-common nav-menu__link nav-menu__link_order">Оформить заказ</a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
