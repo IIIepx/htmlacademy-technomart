@@ -14,37 +14,69 @@
  <body>
   
   <header class="header header_index">
-    <div class="nav-menu">
+    <div class="nav-menu_top">
       <div class="content content_index">
-        <ul class="list-common nav-menu__list">
-          <li class="nav-menu__li">
-            <a class="link-common logo nav-menu__logo" href="#">Техномарт</a>
+        <ul class="list-common top-menu">
+          <li class="top-menu__li">
+            <a class="link-common technomart-button_red logo top-menu__logo" href="#">Техномарт</a>
           </li>
-          <li class="nav-menu__li nav-menu__li_search">
-            <form class="nav-menu__form" method="post">
-              <input class="nav-menu__element nav-menu__input nav-menu__input_search" type="search" placeholder="Поиск:">
-              <span class="nav-menu__icon-font nav-menu__icon-font_search icon-search"></span>
-              <input class="nav-menu__input nav-menu__input_submit" type="submit" value="">
+          <li class="top-menu__li top-menu__li_search">
+            <form class="top-menu__form" method="post">
+              <input class="top-menu__element top-menu__input top-menu__input_search" type="search" placeholder="Поиск:">
+              <span class="top-menu__icon-font top-menu__icon-font_search icon-search"></span>
+              <input class="top-menu__input top-menu__input_submit" type="submit" value="">
             </form>
           </li>
-          <li class="nav-menu__li nav-menu__li_ui nav-menu__li_bookmarks">
-            <a href="jquery-demo.html" class="link-common nav-menu__element nav-menu__link nav-menu__link_bookmarks">
-              <span class="nav-menu__icon-font icon-bookmark"></span>
+          <li class="top-menu__li top-menu__li_bookmarks">
+            <a href="jquery-demo.html" class="link-common top-menu__element top-menu__element_js top-menu__link top-menu__link_bookmarks">
+              <span class="top-menu__icon-font top-menu__icon-font_bookmark icon-bookmark"></span>
               Закладки: 0
             </a>
           </li>
-          <li class="nav-menu__li nav-menu__li_ui nav-menu__li_basket">
-            <a href="jquery-demo.html" class="link-common nav-menu__element nav-menu__link nav-menu__link_basket">
-              <span class="nav-menu__icon-font icon-basket"></span>
+          <li class="top-menu__li top-menu__li_basket">
+            <a href="jquery-demo-2.html" class="link-common top-menu__element top-menu__element_js top-menu__link top-menu__link_basket">
+              <span class="top-menu__icon-font top-menu__icon-font_basket icon-basket"></span>
               Корзина: 0
             </a>
           </li>
-          <li class="nav-menu__li nav-menu__li_ui nav-menu__li_order">
-            <a href="#" class="link-common nav-menu__element nav-menu__link nav-menu__link_order">Оформить заказ</a>
+          <li class="top-menu__li top-menu__li_order">
+            <a href="#" class="link-common top-menu__element top-menu__link top-menu__link_order">Оформить заказ</a>
           </li>
         </ul>
       </div>
     </div>
+      
+     <div class="nav-menu_user">
+      <div class="content content_index">  
+        <ul class="list-common user-menu">
+          <li class="user-menu__li user-nenu__li_description">
+            <p class="text-common user-menu__p">
+              Интернет-магазин<br>
+              строительных материалов<br>
+              и инструментов для ремонта<br>
+            </p>
+          </li>
+          <li class="user-menu__li user-menu__li_contacts">
+            <div class="user-menu__phone">
+              <span class="icon-phone user-menu__icon-font user-menu__icon-font_phone"></span>
+              +7 (812) 555-05-55
+            </div>
+            <span class="user-menu__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+          </li>
+          <li class="user-menu__li user-menu__li_login">
+            <a class="link-common user-menu__button user-menu__button_login">
+              <span class="icon-login user-menu__icon-font user-menu__icon-font_login"></span>
+              Войти
+            </a>
+            <a class="link-common user-menu__button user-menu__button_login">
+              Регистрация
+            </a>
+          </li>
+        </ul>
+      
+      </div>
+    </div>
+    
   </header>
   
   <main class="main main_index">

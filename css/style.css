@@ -101,11 +101,14 @@
 
 /* --COMMON-SYLES---------------------------------------------------------------------- */
 
+body {
+  background-color: #ffffff;
+}
+
 .content {
   width: 940px;
   padding: 0 10px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 .link-common {
@@ -125,7 +128,7 @@
   text-align: center;
   text-transform: uppercase;
   background-color: #ee3643;
-  border-bottom: 4px solid #b52933;
+  border-bottom: 6px solid #b52933;
 }
 
 .media-common {
@@ -137,6 +140,24 @@
   margin: 0;
 }
 
+.technomart-button {
+  font: 14px "Cuprum", Arial, sans-serif;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.technomart-button_red {
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
+.technomart-button_red:hover {
+  background-color: #ca2c37;
+}
+
+.technomart-button_red:active {
+  background-color: #ba2732;
+}
 
 /* --HEADER-------------------------------------------------------------------------- */
 
@@ -144,13 +165,13 @@
   
 }
 
-/* --HEADER__Nav-menu---------------------------------------------------------------- */
+/* --HEADER__Top-menu-- */
 
-.nav-menu {
+.nav-menu_top {
   background-color: #293449;
 }
 
-.nav-menu__list {
+.top-menu {
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -158,33 +179,35 @@
   flex-wrap: wrap;
 }
 
-.nav-menu__element {
-  display: inline-block;
-  padding: 10px;
-  outline: 1px solid red;
+.top-menu__li:last-of-type {
+  margin-left: auto;
 }
 
-.nav-menu__element:hover {
+.top-menu__element {
+  display: inline-block;
+  padding: 11px 0;
+}
+
+.top-menu__element:hover {
   background-color: #212a3a;
 }
 
-.nav-menu__element:active {
+.top-menu__element:active {
   background-color: #212a3a;
   opacity: 0.4;
 }
 
-
-.nav-menu__icon-font {
+.top-menu__icon-font {
   color: #ffffff;
   opacity: 0.3;
 }
 
-.nav-menu__element:hover > .nav-menu__icon-font,
-.nav-menu__form:hover > .nav-menu__icon-font{
+.top-menu__element:hover > .top-menu__icon-font,
+.top-menu__form:hover > .top-menu__icon-font{
   opacity: 1;
 }
 
-.nav-menu__logo {
+.top-menu__logo {
   position: absolute;
   top: 0;
   left: 0;
@@ -192,20 +215,16 @@
   padding: 8px 0;
 }
 
-.nav-menu__li_search {
+.top-menu__li_search {
   margin-left: 220px;
-  margin-right: 50px;
 }
 
-.nav-menu__form {
+.top-menu__form {
   position: relative;
-/*  width: 239px;
-  margin-right: 20px;
-  padding-left: 200px; */
-  outline: 1px solid green;
 }
 
-.nav-menu__input_search {
+.top-menu__input_search {
+  width: 270px;
   padding-left: 45px;
   font: 17px "Cuprum", Arial, sans-serif;
   color: #000000;
@@ -214,50 +233,50 @@
   outline: none;
 }
 
-.nav-menu__input_search:focus {
+.top-menu__input_search:focus {
   background-color: #ffffff;
   opacity: 1;
 }
 
-.nav-menu__input_search::-webkit-input-placeholder {
+.top-menu__input_search::-webkit-input-placeholder {
   font: 17px "Cuprum", Arial, sans-serif;
   color:#ffffff;
   opacity: 1;
 }
 
-.nav-menu__input_search::-moz-placeholder {
+.top-menu__input_search::-moz-placeholder {
   font: 17px "Cuprum", Arial, sans-serif;
   color:#ffffff;
   opacity: 1;
 }/* Firefox 19+ */
 
-.nav-menu__input_search:-moz-placeholder {
+.top-menu__input_search:-moz-placeholder {
   font: 17px "Cuprum", Arial, sans-serif;
   color:#ffffff;
   opacity: 1;
 }/* Firefox 18- */
 
-.nav-menu__input_search:-ms-input-placeholder {
+.top-menu__input_search:-ms-input-placeholder {
   font: 17px "Cuprum", Arial, sans-serif;
   color:#ffffff;
   opacity: 1;
 }
 
-.nav-menu__icon-font_search {
+.top-menu__icon-font_search {
   position: absolute;
-  top: 8px;
+  top: 9px;
   left: 15px;
   width: 25px;
   height: 25px;
   content: "";
 }
 
-.nav-menu__input_search:focus + .nav-menu__icon-font_search {
+.top-menu__input_search:focus + .top-menu__icon-font_search {
   color: #ee3643;
   opacity: 1;
 }
 
-.nav-menu__input_submit {
+.top-menu__input_submit {
   position: absolute;
   top: 9px; 
   left: 15px;
@@ -265,49 +284,75 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  outline: 1px solid red;
 }
 
-.nave-menu__li_ui {
-  padding-left: 15px;
-  margin-right: 10px;
-  width: 125px;
-}
-
-.nav-menu__li_:first-of-type {
-  width: 115px;
-  padding-left: 25px;
-}
-
-.nav-menu__li_ui:last-of-type {
-  width: 140px;
-  margin: 0;
-  margin-left: auto;
-  padding: 0;
-  text-align: center;
-}
-
-.nav-menu__link {
+.top-menu__link {
+  width: 120px;
   font: 17px "Cuprum", Arial, sans-serif;
+  text-align: center;
   color: #ffffff;
 }
 
-.nav-menu__link_order {
+.top-menu__link_bookmarks {
+  padding-left: 6px;
+  margin-right: 27px;
+}
+
+.top-menu__link_order {
+  width: 150px;
+  padding-left: 0px;
   background-color: #63a63e;
 }
 
-.nav-menu__link_order:hover {
+.top-menu__link_order:hover {
   background-color: #5fbb2d;
 }
 
-.nav-menu__link_order:active {
+.top-menu__link_order:active {
   color: #b1c5a8;
   background-color: #518534;
   opacity: 1;
 }
 
-.nav-menu__js_active {
+.top-menu__js_active {
   background-color: #0c11d7;
+}
+
+.top-menu__icon-font_bookmark,
+.top-menu__icon-font_basket {
+  margin-right: 5px;
+}
+
+/* --HEADER-User-menu------------ */
+
+.nav-menu_user {
+  padding: 45px 0 40px 0;
+  background-color: #ffffff;
+  outline: 1px solid red;
+}
+
+.user-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  outline: 1px solid red;
+}
+
+.user-menu__li {
+  width: 310px;
+  outline: 1px solid red;
+}
+
+.user-menu__li:last-of-type {
+  width: 300px;
+}
+
+.user-menu__p {
+  padding-left: 50px;
+  padding-right: 58px;
+  font: 16px/23px "Cuprum Italic", Arial, sans-serif;
+  color: #ee3643;
 }
 
 /* --MAIN--*/
