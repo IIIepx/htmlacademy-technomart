@@ -165,6 +165,10 @@ body {
   
 }
 
+.header-link_active {
+  background-color: #0c11d7;
+}
+
 /* --HEADER__Top-menu-- */
 
 .nav-menu_top {
@@ -314,40 +318,35 @@ body {
   opacity: 1;
 }
 
-.top-menu__js_active {
-  background-color: #0c11d7;
-}
-
-.top-menu__icon-font_bookmark,
-.top-menu__icon-font_basket {
+.top-menu__icon-font_bookmark {
   margin-right: 5px;
 }
 
-/* --HEADER-User-menu------------ */
+.top-menu__icon-font_basket {
+  margin-right: 9px;
+}
+
+
+/* --HEADER-Nav-menu_bottom----------- */
 
 .nav-menu_bottom {
-  padding: 45px 0 55px 0;
+  padding: 45px 0 59px 0;
   background-color: #ffffff;
-  outline: 1px solid red;
   background-color: #f1f5f7;
 }
+
+/* --HEADER-Nav-menu__user-menu-- */
 
 .user-menu {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
-  padding-bottom: 55px;
-  outline: 1px solid red;
+  padding-bottom: 40px;
 }
 
 .user-menu__li {
   width: 310px;
-  outline: 1px solid red;
-}
-
-.user-menu__li:last-of-type {
-  width: 300px;
 }
 
 .user-menu__icon-font {
@@ -363,45 +362,98 @@ body {
   color: #ee3643;
 }
 
+.user-menu__span {
+  display: inline-block;
+}
+
+.user-nenu__li_description {
+  padding-top: 2px;
+}
+
+.user-menu__li_contacts {
+  width: 303px;
+  padding-left: 7px;
+}
+
 .user-menu__phone {
-  width: 266px;
+  padding: 7px 0;
+  width: 263px;
   font: 21px "Cuprum", Arial, sans-serif;
-  text-align: center;
   color: #e9292a;
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 4px solid #ffffff;
+}
+
+.user-menu__phone::after {
+  display: table;
+  content: "";
+  clear: both;
 }
 
 .user-menu__icon-font_phone {
-  text-align: left;
+  float: left;
+  padding-left: 6px;
 }
 
-.user-menu__address {
+.user-menu__span_phone{
+  float: right;
+  padding-right: 49px;
+}
+
+.user-menu__span_address {
+  padding: 7px 0 0 9px;
   font: 14px "Cuprum", Arial, sans-serif;
   color: #32425c;
 }
 
 .user-menu__li_login {
-  padding-left: 15px;
+  width: 281px;
+  padding-left: 34px;
 }
 
 .user-menu__button {
-  padding: 10px 0 15px 0;
+  padding: 7px 0 10px 0;
   font: 21px "Cuprum", Arial, sans-serif;
+  text-align: center;
   color: #000000;
   background-color: #ffffff;
-  outline: 1px solid red;
+  cursor: pointer;
 }
 
+.user-menu__button:hover .user-menu__span_login {
+  color: #ee3643;
+}
+
+.user-menu__button:active .user-menu__span_login {
+  color: #000000;
+  opacity: 0.3;
+}
+
+
 .user-menu__button_login {
-  padding-left: 15px;
-  padding-right: 25px;
   float: left;
+  width: 109px;
+  padding-left: 9px;
+  text-align: left;
+}
+
+.user-menu__button_login:hover .user-menu__icon-font_login {
+  opacity: 1;
+}
+
+.user-menu__button_login:active .user-menu__icon-font_login {
+  opacity: 0.2;
+}
+
+.user-menu__icon-font_login {
+  padding-top: 3px;
+  font-size: 22px;
+  margin-right: 3px;
 }
 
 .user-menu__button_register {
-  padding-left: 25px;
-  padding-right: 15px;
+  width: 150px;
+  padding-top: 10px;
   float: right;
 }
 
@@ -409,44 +461,46 @@ body {
   clear: both;
   content: "";
   display: table;
-  
 }
 
-/* --HEADER-Nav-menu(bottom)--- */
+/* --HEADER-Nav-menu__bottom-menu-- */
 
-.nav-menu {
+.bottom-menu {
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   background-color: #32425c;
-  outline: 1px solid red;
 }
 
-.nav-menu__link {
+.bottom-menu__link {
   display: block;
-  padding: 15px 20px 20px 20px;
+  padding: 19px 30px 20px 28px;
   font: 17px "Cuprum", Arial, sans-serif;
   color: #ffffff;
 }
 
-.nav-menu__link:hover {
+.bottom-menu__link:hover {
   background-color: #293449;
 }
 
-.nav-menu__link:active {
+.bottom-menu__link:active {
   background-color: #1d2739;
   opacity: 0.5;
 }
 
-
-.nav-menu__link:first-of-type {
-  padding-left: 30px;
+.bottom-menu__li:first-of-type .bottom-menu__link {
+  padding-left: 50px;
+  padding-right: 40px;
 }
 
-.nav-menu__link:last-of-type {
-  
-  padding-right: 30px;
+.bottom-menu__li:nth-of-type(2) .bottom-menu__link {
+   padding-right: ; 
+}
+
+.bottom-menu__li:last-of-type .bottom-menu__link {
+  padding-left: 33px;
+  padding-right: 58px;
 }
 
 /* --MAIN--*/
