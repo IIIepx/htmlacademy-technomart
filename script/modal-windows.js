@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 
 $(document).ready( function() {
   $(document).on('click', '.user-menu__button', function(){
@@ -7,3 +7,5 @@ $(document).ready( function() {
     /*$(this).fadeOut(3000);*/
   });
 });
+
+

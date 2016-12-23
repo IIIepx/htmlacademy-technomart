@@ -196,7 +196,8 @@ body {
   background-color: #212a3a;
 }
 
-.top-menu__element:active {
+.top-menu__element:active,
+.top-menu__element_active {
   background-color: #212a3a;
   opacity: 0.4;
 }
@@ -312,7 +313,8 @@ body {
   background-color: #5fbb2d;
 }
 
-.top-menu__link_order:active {
+.top-menu__link_order:active,
+.top-menu__link_order_active {
   color: #b1c5a8;
   background-color: #518534;
   opacity: 1;
@@ -484,7 +486,8 @@ body {
   background-color: #293449;
 }
 
-.bottom-menu__link:active {
+.bottom-menu__link:active,
+.bottom-menu__link_active{
   background-color: #1d2739;
   opacity: 0.5;
 }
