@@ -147,8 +147,13 @@ body {
 }
 
 .technomart-button_red {
-  background-color: #ee3643;
+  padding: 9px 0 13px 0;
+  font: 14px/18px "Cuprum", Arial, sans-serif;
   color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  border-radius: 3px;
 }
 
 .technomart-button_red:hover {
@@ -599,23 +604,115 @@ body {
 .items-list__item_5 .items-list__item-img {
   right: 45px;
 }
-  
+
+/* --MAIN-Index-catalog__items-list__Slider-----------------*/
+
 .items-list__item_slider {
-  width: 620px;
-  height: 260px;
+  position: relative;
+  width: 618px;
+  height: 266px;
   padding: 0;
+  background-color: dimgrey;
+}
+
+.items-list__input {
+  display: none;
+}
+
+.items-slider__slides {
+  display: none;
+}
+
+.items-list__switches {
+  position: absolute;
+  bottom: 30px;
+  left: 294px;
+  width: ;
+  height: ;
+}
+
+.items-slider__switch {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.items-slider__switch:last-of-type {
+  margin-right: 0;
+}
+
+#s1-r1:checked ~ .items-list__switches .items-slider__switch[for="s1-r1"]::after,
+#s1-r2:checked ~ .items-list__switches .items-slider__switch[for="s1-r2"]::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background-color: #ee3643;
+  border-radius: 50%;
+  content: "";
+}
+
+#s1-r1:checked ~ .items-slider .items-slider__slide1,
+#s1-r2:checked ~ .items-slider .items-slider__slide2 {
+  display: block;
+}
+
+.items-slider__slides {
+  width: 618px;
+  height: 266px;
+}
+
+.items-slider__slide1 {
+  background: url("../img/header-slider_slide1.jpg") no-repeat center;
+}
+
+.items-slider__slide2 {
+  background: url("../img/header-slider_slide2.jpg") no-repeat center;
+}
+
+.items-slider__slide-title {
+  font: 36px/30px "Cuprum Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.items-slider__item-description {
+  font: 18px/24px "PT Sans", Arial, sans-serif;
+  color: #ffffff;
+}
+
+.items-slider__icon-font {
+  position: absolute;
+  display: block;
+  font-size: 45px;
+  color: #ffffff;
+}
+
+.items-slider__icon-font_left {
+  top: 109px;
+  left: 5px;
+}
+
+.items-slider__icon-font_right {
+  top: 109px;
+  right: 2px;
 }
 
 
-
-
-
-
-
-
-
-
-
+.items-slider__btn {
+  position: absolute;
+  bottom: 20px;
+  left: 24px;
+  width: 195px;
+}
 
 
 
