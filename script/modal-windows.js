@@ -1,10 +1,14 @@
-/*'use strict';
+
+'use strict';
 
 $(document).ready( function() {
-  $(document).on('click', '.user-menu__button', function(){
-    $(this).css('background-color', 'red');
-    $('.user-menu__li_login').append('<div class="item-test">TEST</div>');
-    /*$(this).fadeOut(3000);*/
+  $(document).on('click', '.items-slider__switch', function(){
+    $('.items-slider__slide1').toggle();
+    $('.items-slider__slide2').toggle();
+  });
+  $(document).on('click', '.items-slider__icon-font', function(){
+    $('.items-slider__slide1').toggle();
+    $('.items-slider__slide2').toggle();
   });
 });
 

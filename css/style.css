@@ -156,11 +156,13 @@ body {
   border-radius: 3px;
 }
 
-.technomart-button_red:hover {
+.technomart-button_red:hover,
+.logo:hover {
   background-color: #ca2c37;
 }
 
-.technomart-button_red:active {
+.technomart-button_red:active,
+.logo:active {
   background-color: #ba2732;
 }
 
@@ -223,6 +225,8 @@ body {
   left: 0;
   width: 220px;
   padding: 8px 0;
+  font: 
+  border-radius: 0;
 }
 
 .top-menu__li_search {
@@ -519,26 +523,27 @@ body {
 
 /* --MAIN-Index-catalog--------------------------- */
 .index-catalog {
-  padding: 60px 0 82px 0;
+  padding: 60px 0 48px 0;
   background-color: #ffffff;
-  
+  outline: 1px solid red;
 }
 
 /* --MAIN-Index-catalog__items-list--------------------------- */
 
 .index-catalog__items-list {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  align-content: stretch;
+  align-items: flex-start;
   flex-wrap: wrap;
   outline: 1px solid red;
 }
 
 .items-list__item {
   position: relative;
-  width: 260px;
+  width: 276px;
   height: 80px;
-  padding: 20px;
+  padding: 20px 0 20px 22px;
   margin-bottom: 24px;
   overflow: hidden;
   outline: 1px solid red;
@@ -557,16 +562,27 @@ body {
   background-color: #cc79d1;
 }
 
+.items-list__item_4 {
+   margin-bottom: 0; 
+}
+
 .items-list__item_5 {
+  margin-left: auto;
   background-color: #85d179;
+}
+
+.items-list__item_6 {
+  position: absolute;
+  bottom: -24px;
+  right: 0;
 }
 
 .items-list__item-new {
   position: absolute;
   top: 5px;
-  right: -25px;
+  right: -20px;
   width: 80px;
-  padding: 3px 0;
+  padding: 5px 0;
   display: block;
   font: 16px/18px "PT Sans", Arial, sans-serif;
   text-align: center;
@@ -585,12 +601,12 @@ body {
 .items-list__item-button {
   display: block;
   width: 135px;
-  padding: 8px 0 10px 0; 
+  padding: 10px 0 10px 0; 
   font: 14px/18px "Cuprum", Arial, sans-serif;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  background-color: rgba(178, 178,178, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 3px;
 }
 
@@ -605,6 +621,10 @@ body {
   right: 45px;
 }
 
+.items-list__item_5 .items-list__item-img {
+  top: 28px;
+}
+
 /* --MAIN-Index-catalog__items-list__Slider-----------------*/
 
 .items-list__item_slider {
@@ -612,7 +632,6 @@ body {
   width: 618px;
   height: 266px;
   padding: 0;
-  background-color: dimgrey;
 }
 
 .items-list__input {
@@ -668,6 +687,7 @@ body {
 .items-slider__slides {
   width: 618px;
   height: 266px;
+  z-index: 1;
 }
 
 .items-slider__slide1 {
@@ -678,7 +698,22 @@ body {
   background: url("../img/header-slider_slide2.jpg") no-repeat center;
 }
 
+.items-slider__title-block {
+  padding: 25px 0px 20px 22px;
+  /*background-color: rgba(136, 130, 124, 0.3);*/
+  
+}
+
+.items-slider__title-block_slide1 {
+  background: url(../img/header-slider_slide1_title-layer.jpg.png) no-repeat center;
+}
+
+.items-slider__title-block_slide2 {
+  background: url(../img/header-slider_slide2_title-layer.jpg.png) no-repeat center;
+}
+
 .items-slider__slide-title {
+  margin-bottom: 3px;
   font: 36px/30px "Cuprum Bold", Arial, sans-serif;
   text-transform: uppercase;
   color: #ffffff;
@@ -686,6 +721,7 @@ body {
 
 .items-slider__item-description {
   font: 18px/24px "PT Sans", Arial, sans-serif;
+  word-spacing: ;
   color: #ffffff;
 }
 
@@ -694,6 +730,7 @@ body {
   display: block;
   font-size: 45px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .items-slider__icon-font_left {
