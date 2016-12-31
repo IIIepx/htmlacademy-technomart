@@ -111,6 +111,17 @@ body {
   margin: 0 auto;
 }
 
+.item-new {
+  width: 80px;
+  padding: 15px 0;
+  display: inline-block;
+  font: 16px/18px "PT Sans", Arial, sans-serif;
+  text-align: center;
+  transform: rotate(45deg);
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
 .link-common {
   text-decoration: none;
 }
@@ -164,6 +175,10 @@ body {
 .technomart-button_red:active,
 .logo:active {
   background-color: #ba2732;
+}
+
+.technomart-button_price {
+	
 }
 
 /* --HEADER-------------------------------------------------------------------------- */
@@ -525,7 +540,6 @@ body {
 .index-catalog {
   padding: 60px 0 48px 0;
   background-color: #ffffff;
-  outline: 1px solid red;
 }
 
 /* --MAIN-Index-catalog__items-list--------------------------- */
@@ -536,7 +550,6 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  outline: 1px solid red;
 }
 
 .items-list__item {
@@ -546,7 +559,6 @@ body {
   padding: 20px 0 20px 22px;
   margin-bottom: 24px;
   overflow: hidden;
-  outline: 1px solid red;
 }
 
 .items-list__item_1,
@@ -581,14 +593,6 @@ body {
   position: absolute;
   top: 5px;
   right: -20px;
-  width: 80px;
-  padding: 5px 0;
-  display: block;
-  font: 16px/18px "PT Sans", Arial, sans-serif;
-  text-align: center;
-  transform: rotate(45deg);
-  color: #ffffff;
-  background-color: #ee3643;
 }
 
 .items-list__item-title {
