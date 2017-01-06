@@ -729,7 +729,7 @@ body {
   color: #ffffff;
 }
 
-.items-slider__icon-font {
+.items-slider__icon-font-switch {
   position: absolute;
   display: block;
   font-size: 45px;
@@ -737,12 +737,12 @@ body {
   cursor: pointer;
 }
 
-.items-slider__icon-font_left {
+.items-slider__icon-font-switch_left {
   top: 109px;
   left: 5px;
 }
 
-.items-slider__icon-font_right {
+.items-slider__icon-font-switch_right {
   top: 109px;
   right: 2px;
 }
