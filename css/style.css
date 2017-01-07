@@ -37,6 +37,13 @@
 }
 
 @font-face {
+  font-family: "PT Sans Narrow";
+  src: 
+    local("PT Sans Narrow"),
+    url('../fonts/PTSans/PTN57F.ttf') format('trueformat');
+}
+
+@font-face {
   font-family: "PT Sans Bold";
   src: 
     local("PT Sans Bold"),
@@ -112,10 +119,9 @@ body {
 }
 
 .item-new {
-  width: 80px;
-  padding: 15px 0;
-  display: inline-block;
-  font: 16px/18px "PT Sans", Arial, sans-serif;
+  display: block;
+  width: 90px;
+  font: 16px/18px "PT Sans Narrow", Arial, sans-serif;
   text-align: center;
   transform: rotate(45deg);
   color: #ffffff;
@@ -158,13 +164,12 @@ body {
 }
 
 .technomart-button_red {
-  padding: 9px 0 13px 0;
   font: 14px/18px "Cuprum", Arial, sans-serif;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   background-color: #ee3643;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 .technomart-button_red:hover,
@@ -537,12 +542,13 @@ body {
 }
 
 /* --MAIN-Index-catalog--------------------------- */
+
 .index-catalog {
-  padding: 60px 0 48px 0;
+  padding: 60px 0 53px 0;
   background-color: #ffffff;
 }
 
-/* --MAIN-Index-catalog__items-list--------------------------- */
+/* --MAIN-Index-catalog__items-list-- */
 
 .index-catalog__items-list {
   position: relative;
@@ -591,8 +597,10 @@ body {
 
 .items-list__item-new {
   position: absolute;
-  top: 5px;
-  right: -20px;
+  top: 9px;
+  right: -33px;
+  padding: 5px 0 5px 0;
+  width: 100px;
 }
 
 .items-list__item-title {
@@ -629,7 +637,7 @@ body {
   top: 28px;
 }
 
-/* --MAIN-Index-catalog__items-list__Slider-----------------*/
+/* --MAIN-Index-catalog__items-list__Slider-- */
 
 .items-list__item_slider {
   position: relative;
@@ -750,19 +758,47 @@ body {
 
 .items-slider__btn {
   position: absolute;
-  bottom: 20px;
-  left: 24px;
-  width: 195px;
+  bottom: 22px;
+  left: 26px;
+  width: 194px;
+  padding: 10px 0 9px 0;
 }
 
 
+/* --MAIN-Index-catalog__Fesature-items-----------------*/
 
+.index__feature-items {
+  position: relative;
+  vertical-align: middle;
+}
 
+.index__title-block {
+  padding : 30px 25px 29px 25px;
+  background-color: #f7f3ec;
+}
 
+/*
+.index__title-block::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+*/  
+.index-title-block__h2 {
+  
+  font: 30px/30px "Cuprum", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #32425c;
+}
 
-
-
-
+.index-title-block__button {
+  position: absolute;
+  top: 25px;
+  right: 24px;
+  float: right;
+  width: 252px;
+  padding: 11px 0 9px 0;
+}
 
 
 
