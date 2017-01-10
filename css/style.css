@@ -110,6 +110,7 @@
 
 body {
   background-color: #ffffff;
+  font-size: 0.625em;
 }
 
 .content {
@@ -121,7 +122,7 @@ body {
 .item-new {
   display: block;
   width: 90px;
-  font: 16px/18px "PT Sans Narrow", Arial, sans-serif;
+  font: 1.6em/1.125em "PT Sans Narrow", Arial, sans-serif;/*16/18*/
   text-align: center;
   transform: rotate(45deg);
   color: #ffffff;
@@ -140,7 +141,7 @@ body {
 
 .logo {
   display: block;
-  font: 24px/24px "Cuprum", Arial, sans-serif;
+  font: 1.2em/1em "Cuprum", Arial, sans-serif;/*24/24*/
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -158,13 +159,15 @@ body {
 }
 
 .technomart-button {
-  font: 14px "Cuprum", Arial, sans-serif;
+  display: block;
+  font: 1.4em "Cuprum", Arial, sans-serif;/*14*/
   text-transform: uppercase;
   border-radius: 3px;
 }
 
 .technomart-button_red {
-  font: 14px/18px "Cuprum", Arial, sans-serif;
+  display: block;
+  font: 1.4em/1.2857142857em "Cuprum", Arial, sans-serif;/*14/18*/
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -187,10 +190,6 @@ body {
 }
 
 /* --HEADER-------------------------------------------------------------------------- */
-
-.header {
-  
-}
 
 .header-link_active {
   background-color: #0c11d7;
@@ -234,6 +233,10 @@ body {
   opacity: 0.3;
 }
 
+.top-menu__icon-font_search {
+  font-size: 1.7em;
+}
+
 .top-menu__element:hover > .top-menu__icon-font,
 .top-menu__form:hover > .top-menu__icon-font{
   opacity: 1;
@@ -245,7 +248,6 @@ body {
   left: 0;
   width: 220px;
   padding: 8px 0;
-  font: 
   border-radius: 0;
 }
 
@@ -260,7 +262,7 @@ body {
 .top-menu__input_search {
   width: 270px;
   padding-left: 45px;
-  font: 17px "Cuprum", Arial, sans-serif;
+  font: 1.7em "Cuprum", Arial, sans-serif;/*17*/
   color: #000000;
   background-color: #293449;
   border: none;
@@ -273,25 +275,25 @@ body {
 }
 
 .top-menu__input_search::-webkit-input-placeholder {
-  font: 17px "Cuprum", Arial, sans-serif;
+  font: 17px "Cuprum", Arial, sans-serif;/*17*/
   color:#ffffff;
   opacity: 1;
 }
 
 .top-menu__input_search::-moz-placeholder {
-  font: 17px "Cuprum", Arial, sans-serif;
+  font: 17px "Cuprum", Arial, sans-serif;/*17*/
   color:#ffffff;
   opacity: 1;
 }/* Firefox 19+ */
 
 .top-menu__input_search:-moz-placeholder {
-  font: 17px "Cuprum", Arial, sans-serif;
+  font: 17px "Cuprum", Arial, sans-serif;/*17*/
   color:#ffffff;
   opacity: 1;
 }/* Firefox 18- */
 
 .top-menu__input_search:-ms-input-placeholder {
-  font: 17px "Cuprum", Arial, sans-serif;
+  font: 17px "Cuprum", Arial, sans-serif;/*17*/
   color:#ffffff;
   opacity: 1;
 }
@@ -322,7 +324,7 @@ body {
 
 .top-menu__link {
   width: 120px;
-  font: 17px "Cuprum", Arial, sans-serif;
+  font: 1.7em "Cuprum", Arial, sans-serif;/*17*/
   text-align: center;
   color: #ffffff;
 }
@@ -381,7 +383,7 @@ body {
 }
 
 .user-menu__icon-font {
-  font-size: 20px;
+  font-size: 1em;/*20*/
   color: #32425c;
   opacity: 0.3;
 }
@@ -389,7 +391,7 @@ body {
 .user-menu__p {
   padding-left: 50px;
   padding-right: 58px;
-  font: 16px/23px "Cuprum Italic", Arial, sans-serif;
+  font: 1.6em/1.4375em "Cuprum Italic", Arial, sans-serif;/*16/23*/
   color: #ee3643;
 }
 
@@ -409,7 +411,7 @@ body {
 .user-menu__phone {
   padding: 7px 0;
   width: 263px;
-  font: 21px "Cuprum", Arial, sans-serif;
+  font: 2.1em "Cuprum", Arial, sans-serif;/*21*/
   color: #e9292a;
   background-color: transparent;
   border: 4px solid #ffffff;
@@ -433,7 +435,7 @@ body {
 
 .user-menu__span_address {
   padding: 7px 0 0 9px;
-  font: 14px "Cuprum", Arial, sans-serif;
+  font: 1.4em "Cuprum", Arial, sans-serif;/*14*/
   color: #32425c;
 }
 
@@ -444,7 +446,7 @@ body {
 
 .user-menu__button {
   padding: 7px 0 10px 0;
-  font: 21px "Cuprum", Arial, sans-serif;
+  font: 2.1em "Cuprum", Arial, sans-serif;/*21*/
   text-align: center;
   color: #000000;
   background-color: #ffffff;
@@ -478,7 +480,7 @@ body {
 
 .user-menu__icon-font_login {
   padding-top: 3px;
-  font-size: 22px;
+  font-size: 1em;/*22*/
   margin-right: 3px;
 }
 
@@ -502,13 +504,12 @@ body {
   align-items: center;
   flex-wrap: wrap;
   background-color: #32425c;
-  outline: 1px solid red;
 }
 
 .bottom-menu__link {
   display: block;
   padding: 19px 30px 20px 28px;
-  font: 17px "Cuprum", Arial, sans-serif;
+  font: 1.7em "Cuprum", Arial, sans-serif;/*17*/
   color: #ffffff;
 }
 
@@ -602,7 +603,7 @@ body {
 
 .items-list__item-title {
   margin-bottom: 15px;
-  font: 24px/30px "Cuprum", Arial, sans-serif;
+  font: 2.4em/1.25em "Cuprum", Arial, sans-serif;/*24/30*/
   color: #ffffff;
   text-transform: capitalize;
 }
@@ -611,7 +612,7 @@ body {
   display: block;
   width: 135px;
   padding: 10px 0 10px 0; 
-  font: 14px/18px "Cuprum", Arial, sans-serif;
+  font: 1.4em/1.2857142857em "Cuprum", Arial, sans-serif;/*14/18*/
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -723,13 +724,13 @@ body {
 
 .items-slider__slide-title {
   margin-bottom: 3px;
-  font: 36px/30px "Cuprum Bold", Arial, sans-serif;
+  font: 3.6em/0.8333333333em "Cuprum Bold", Arial, sans-serif;/*36/30*/
   text-transform: uppercase;
   color: #ffffff;
 }
 
 .items-slider__item-description {
-  font: 18px/24px "PT Sans", Arial, sans-serif;
+  font: 1.8em/1.3333333333em "PT Sans", Arial, sans-serif;/*18/24*/
   word-spacing: ;
   color: #ffffff;
 }
@@ -737,7 +738,7 @@ body {
 .items-slider__icon-font-switch {
   position: absolute;
   display: block;
-  font-size: 45px;
+  font-size: 4.5em;/*45*/
   color: #ffffff;
   cursor: pointer;
 }
@@ -775,7 +776,7 @@ body {
 }
 
 .index-title-block__h2 {
-  font: 30px/30px "Cuprum", Arial, sans-serif;
+  font: 3em/1em "Cuprum", Arial, sans-serif;/*30/30*/
   text-transform: uppercase;
   color: #32425c;
 }
@@ -801,15 +802,78 @@ body {
 }
 
 .feature-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 219px;
   height: 294px;
   margin-right: 18px;
   margin-bottom: 20px;
   padding-bottom: 20px;
   text-align: center;
+  overflow: hidden;
   border: 1px solid #e5e5e5;
 }
 
 .feature-item:nth-of-type(4n) {
   margin-right: 0;
+}
+
+.feature-item__img {
+  
+}
+
+.feature-item__name {
+  font: 1.8em/1.1111111111em "PT Sans Bold", Arial, sans-serif;/*18/20*/
+  color: #000000;
+}
+
+.feature-item__old-price {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font: 1.7em/1.1111111111em "PT Sans Bold", Arial, sans-serif;/*17/18*/
+  text-decoration: line-through;
+  color: #999999;
+}
+
+.tecnomart-button_price {
+  position: relative;
+  width: 138px;
+  margin-top: auto;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  font: 1.7em/1.0588235294em "PT Sans Bold", Arial, sans-serif;/*17/18*/
+}
+
+.tecnomart-button_price::before {
+  position: absolute;
+  top: 0px;
+  right: -15px;
+  content: "";
+  width: 35px;
+  height: 15px;
+  transform: rotate(45deg);
+  background-color: #ffffff;
+}
+
+.tecnomart-button_price::after {
+  position: absolute;
+  bottom: 0px;
+  right: -15px;
+  content: "";
+  width: 35px;
+  height: 15px;
+  transform: rotate(-45deg);
+  background-color: #ffffff;
+}
+
+
+.feature-item__item-new {
+  position: absolute;
+  top: 9px;
+  right: -33px;
+  padding: 5px 0 5px 0;
+  width: 100px;
 }
