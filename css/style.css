@@ -768,10 +768,11 @@ body {
 .index__feature-items {
   position: relative;
   vertical-align: middle;
+  outline: 1px solid red;
 }
 
 .index__title-block {
-  padding : 30px 25px 29px 25px;
+  padding : 28px 25px 29px 25px;
   background-color: #f7f3ec;
 }
 
@@ -805,15 +806,22 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  width: 219px;
-  height: 294px;
-  margin-right: 18px;
+  width: 218px;
+  height: 116px;
+  margin-right: 20px;
   margin-bottom: 20px;
+  padding-top: 178px;
   padding-bottom: 20px;
   text-align: center;
   overflow: hidden;
   border: 1px solid #e5e5e5;
+}
+
+.feauture-item_2 {
+  padding-top: ;
+  height: ;
 }
 
 .feature-item:nth-of-type(4n) {
@@ -821,17 +829,39 @@ body {
 }
 
 .feature-item__img {
-  
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.feature-item__img_item1 {
+  top: 6px;
+  left: 16px;
+}
+
+.feature-item__img_item2 {
+  top: 29px;
+  left: 40px;
+}
+
+.feature-item__img_item3 {
+  top: 21px;
+  left: 28px;
+}
+
+.feature-item__img_item4 {
+  top: 29px;
+  left: 32px;
 }
 
 .feature-item__name {
+  margin-bottom: 12px;
   font: 1.8em/1.1111111111em "PT Sans Bold", Arial, sans-serif;/*18/20*/
   color: #000000;
 }
 
 .feature-item__old-price {
   display: block;
-  margin-top: 15px;
   margin-bottom: 10px;
   font: 1.7em/1.1111111111em "PT Sans Bold", Arial, sans-serif;/*17/18*/
   text-decoration: line-through;
@@ -840,11 +870,14 @@ body {
 
 .tecnomart-button_price {
   position: relative;
-  width: 138px;
+  width: 135px;
   margin-top: auto;
-  padding-top: 11px;
-  padding-bottom: 10px;
+  margin-left: 9px;
+  padding-top: 9px;
+  padding-right: 7px;
+  padding-bottom: 11px;
   font: 1.7em/1.0588235294em "PT Sans Bold", Arial, sans-serif;/*17/18*/
+  outline: 1px solid red;
 }
 
 .tecnomart-button_price::before {
@@ -858,6 +891,10 @@ body {
   background-color: #ffffff;
 }
 
+.feauture-item_4 .tecnomart-button_price {
+  margin-top: 19px;
+}
+
 .tecnomart-button_price::after {
   position: absolute;
   bottom: 0px;
@@ -869,11 +906,10 @@ body {
   background-color: #ffffff;
 }
 
-
 .feature-item__item-new {
   position: absolute;
-  top: 9px;
-  right: -33px;
+  top: 5px;
+  right: -31px;
   padding: 5px 0 5px 0;
   width: 100px;
 }
