@@ -2,20 +2,23 @@
 "use strict";
 
 $(document).ready(function () {
+
+// slider-code----------------------------------------
+  $.fn.sliderSwitch = function () {
+    $('.items-slider__slides').fadeToggle(1000);
+  };
   
-  $(document).on( 'click', '.items-slider__switch , .items-slider__icon-font-switch', function() {
-    $('.items-slider__slide1').toggle();
-    $('.items-slider__slide2').toggle();
+  $(document).on('click', '.items-slider__switch , .items-slider__icon-font-switch', function () {
+    $(this).sliderSwitch();
   });
   
-  $('.top-menu__logo').click(function() {
-    $(this).effect( "bounce", {times: 3}, "slow" );
-  });
+  setInterval($.fn.sliderSwitch, 4000);
   
-  $(document).setTime( function() {
-                            $('.items-slider__slide1').toggle();
-                            $('.items-slider__slide2').toggle();
-                          }, 2000 );
+// va-tests---------------------------------------------
+    $('.top-menu__logo').click(function () {
+      $(this).effect("bounce", {times: 3}, "slow");
+      
+    });
+// -----------------------------------------------------  
+  
 });
-
-
