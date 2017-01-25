@@ -4,12 +4,16 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Aacademy Technomart - Index</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"> -->
   <link rel="stylesheet" href="css/jquery-ui.min.css">
   <link rel="stylesheet" href="css/style.css">
   <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
   <script src="script/jquery-3.1.1.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
   <script src="script/jquery-ui.min.js"></script>
 </head>
 
@@ -176,8 +180,7 @@
           <div class="feature-item feauture-item_1 catalog__item">
             <div class="buy-item">
               <a class="link-common technomart-button_item buy-item__buy-btn" href="#">
-                <span class="text-common icon-basket buy-item__icon-font"></span>
-                Купить
+                <span class="text-common icon-basket buy-item__icon-font"></span> Купить
               </a>
               <a class="link-common technomart-button_item buy-item__bookmark-btn" href="#">В закладки</a>
             </div>
@@ -267,8 +270,64 @@
           </li>
         </ul>
       </div>
+    </div>
 
-      <a href="symbols-technomart-icon-font-demo.html">ICON-FONT</a>
+    <div class="techomart-services">
+      <div class="content">
+        <div class="services__title-block">
+          <h2 class="text-common services__h2">Сервисы</h2>
+          <p class="text-common services__description">
+            Хороший интернет-магазин отличается от плохого не только ценами!
+            <br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          </p>
+        </div>
+        <div class="services__slider">
+          <input id="delivery" class="services__input" type="radio" name="services" value="s2-r1" checked>
+          <input id="warranty" class="services__input" type="radio" name="services" value="s2-r2">
+          <input id="credit" class="services__input" type="radio" name="services" value="s2-r3">
+          <div class="services__switches">
+            <label for="delivery" class="services__label">Доставка</label>
+            <label for="warranty" class="services__label">Гарантия</label>
+            <label for="credit" class="services__label">Кредит</label>
+          </div>
+          <div class="services__wrapper">
+            <div class="services__slide services__slide_1">
+              <h2 class="text-common services__slide-title ">Доставка</h2>
+              <p class="services__description">
+                Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем,<br>
+                поднимая его на ваш на этаж!<br>
+              </p>
+              <img class="media-common services__img" src="img/Services__delivery.png" width="206" height="146" alt="delivery">
+            </div>
+            <div class="services__slide services__slide_2">
+              <h2 class="text-common services__slide-title ">Гарантия</h2>
+              <p class="services__description">
+                Если купленный у нас товар поломается или заискрит,<br>
+                а также в случае пожара, спровоцированного его возгаранием,<br>
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                сгоревший товар на новый.<br>
+                Дом уж восстановите как-нибудь сами.
+              </p>
+              <img class="media-common services__img" src="img/Services__warranty.png" width="170" height="172" alt="warranty">
+            </div>
+            <div class="services__slide services__slide_3">
+              <h2 class="text-common services__slide-title ">Кредит</h2>
+              <p class="services__description">
+                Залезть в долговую яму стало проще!<br>
+                Кредитные консультанты придут вам на помощь.
+              </p>
+              <a class="technomart-button_red services__button" href="#">Отправить заявку</a>
+              <img class="media-common services__img" src="img/Services__credit.png" width="181" height="184" alt="credit">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <a href="symbols-technomart-icon-font-demo.html">ICON-FONT</a>
   </main>
 
   <script src="script/script.js"></script>

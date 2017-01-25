@@ -968,8 +968,8 @@ body {
   padding: 5px 0 5px 0;
   width: 100px;
 }
-/* --MAIN-Index-catalog__Fesature-brends-----------------*/
 
+/* --MAIN-Index-catalog__Fesature-brends-----------------*/
 .brends__list {
   display: flex;
   justify-content: flex-start;
@@ -999,4 +999,54 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* --MAIN-Index__Services----------------------------------- */
+.techomart-services {
+  padding-top: 67px;
+  padding-bottom: 100px;
+  background-color: #f2f6f8;
+}
+
+.serices__title-block {
+  width: 100%;
+  padding-bottom: 73px;
+  text-align: left;
+}
+
+.services__h2 {
+  font: 3em/0.8em "Cuprum", Arial, sans-serif;/*30/24*/
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.services__description {
+  font: 1.3em/1.8461538462em "PT Sans", Arial, sans-serif;/*13/24*/
+  color: #000000;
+}
+
+/* --Services__Slider-------- */
+.services__slider {
+  position: relative;
+}
+
+.services__input {
+  display: none;
+}
+
+.services__switches {
+  position: absolute;
+  top: 73px;
+  left: 0;
+  width: 240px;
+}
+
+.services__label {
+  display: block;
+  padding-top: 17px;
+  padding-left: 23px;
+  padding-bottom: 22px;
+  font: 2.1em/1.4285714286em "Cuprum Bold", Arial, sans-serif;/*21/30*/
+  color: #ffffff;
+  background-color: #32425c;
 }
