@@ -179,6 +179,8 @@ body {
 
 .technomart-button_red {
   display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font: 1.4em/1.2857142857em "Cuprum", Arial, sans-serif;/*14/18*/
   color: #ffffff;
   text-align: center;
@@ -1008,13 +1010,15 @@ body {
   background-color: #f2f6f8;
 }
 
-.serices__title-block {
+.services__title-block {
   width: 100%;
   padding-bottom: 73px;
   text-align: left;
+  outline: 1px solid red;
 }
 
 .services__h2 {
+  margin-bottom: 35px;
   font: 3em/0.8em "Cuprum", Arial, sans-serif;/*30/24*/
   text-transform: uppercase;
   color: #000000;
@@ -1028,6 +1032,13 @@ body {
 /* --Services__Slider-------- */
 .services__slider {
   position: relative;
+  outline: 1px solid red;
+}
+
+.services__slider::after {
+  display: table;
+  clear: both;
+  content: "";
 }
 
 .services__input {
@@ -1035,18 +1046,142 @@ body {
 }
 
 .services__switches {
-  position: absolute;
-  top: 73px;
-  left: 0;
+  position: relative;
+  float: left;
   width: 240px;
+  outline: 1px solid red;
 }
+
+.services__switches::after {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  content: "";
+  width: 1px;
+  height: 220px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: -1px 0 5px 1px rgba(0, 0, 0, 0.6);
+}
+
 
 .services__label {
   display: block;
-  padding-top: 17px;
+  padding-top: 16px;
   padding-left: 23px;
-  padding-bottom: 22px;
+  padding-bottom: 16px;
   font: 2.1em/1.4285714286em "Cuprum Bold", Arial, sans-serif;/*21/30*/
   color: #ffffff;
   background-color: #32425c;
+  cursor: pointer;
+  border-bottom: 1px solid #293449;
+  border-top: 1px solid #405069;
+}
+
+#delivery:checked ~ .services__switches > label[for="delivery"],
+#warranty:checked ~ .services__switches > label[for="warranty"],
+#credit:checked ~ .services__switches > label[for="credit"] {
+  color: #32425c;
+  background-color: #ffffff;
+  border: none;
+}
+
+.services__wrapper {
+  position: relative;
+  float: right;
+  width: 620px;
+  height: 183px;
+  overflow: hidden;
+  outline: 1px solid red;
+}
+
+.services__slide {
+  position: relative;
+  display: none;
+  width: inherit;
+  height: inherit;
+  transform: scale(0);
+  text-align: left;
+  transition: scale 3s ease;
+}
+
+.services__slide-title {
+  margin-bottom: 35px;
+  font: 3.6em/0.6666666667em "Cuprum", sans-serif;/*36/24*/
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.services__description_slide {
+  margin-bottom: 30px;
+}
+
+.services__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.services__button {
+  width: 195px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#delivery:checked ~ .services__wrapper > .services__slide_1,
+#warranty:checked ~ .services__wrapper > .services__slide_2,
+#credit:checked ~ .services__wrapper > .services__slide_3 {
+  display: block;
+  transform: scale(1);
+}
+
+/* --Index__About-us--------------------------------------- */
+.technomart-about-us {
+  padding-top: 77px;
+  padding-bottom: 85px;
+}
+
+.content_about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.about-us {
+  width: 540px;
+  outline: 1px solid red;
+}
+
+.about-us__title {
+  font: 3em "Cuprum", Arial, sans-serif;/*30*/
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.about-us__title {
+  font: 3em "Cuprum", Arial, sans-serif;/*30*/
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.about-us__description {
+  font: 1.3em/1.8461538462em "PT Sans", Arial, sans-serif;/*13/24*/
+  color: #000000;
+}
+
+.about-us__link {
+  font: 1.8em/1.1111111111em "Cuprum", Arial, sans-serif;/*18/20*/
+  color: #000000;
+}
+
+.about-us__button {
+  width: 220px;
+}
+
+.contacts {
+  width: 300px;
+  outline: 1px solid red;
+}
+
+.contacts__button {
+  width: 300px;
 }

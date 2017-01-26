@@ -5,6 +5,14 @@ $(document).ready(function () {
   "use strict";
 
   // slider-code----------------------------------------
+  $('.items-slider__icon-font-switch').hide();
+  $('.items-list__item_slider').mouseover(function () {
+    $('.items-slider__icon-font-switch').show();
+  });
+  $('.items-list__item_slider').mouseleave(function () {
+    $('.items-slider__icon-font-switch').hide();
+  });
+  
   $.fn.sliderSwitch = function () {
     $('.items-slider__slides').fadeToggle(1000);
   };
