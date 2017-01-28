@@ -24,7 +24,7 @@ $(document).ready(function () {
   setInterval($.fn.sliderSwitch, 4000);
 
   // va-tests---------------------------------------------
-  $('.top-menu__logo').click(function () {
+  $('.logo_header, .loho_footer').click(function () {
     $(this).effect("bounce", {
       times: 3
     }, "slow");

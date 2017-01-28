@@ -253,7 +253,7 @@ body {
   opacity: 1;
 }
 
-.top-menu__logo {
+.logo_header {
   position: absolute;
   top: 0;
   left: 0;
@@ -1146,12 +1146,20 @@ body {
   align-items: stretch;
 }
 
-.about-us {
+.about-us__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.company-about {
   width: 540px;
   outline: 1px solid red;
 }
 
 .about-us__title {
+  margin-bottom: 35px;
   font: 3em "Cuprum", Arial, sans-serif;/*30*/
   text-transform: uppercase;
   color: #000000;
@@ -1164,16 +1172,45 @@ body {
 }
 
 .about-us__description {
+  margin-bottom: 35px;
   font: 1.3em/1.8461538462em "PT Sans", Arial, sans-serif;/*13/24*/
   color: #000000;
 }
 
-.about-us__link {
+.company-about__delivery-companies-list {
+  margin-bottom: 35px;
+}
+
+.company-about__li {
+  margin-bottom: 25px;
+}
+
+.company-about__li:last-of-type {
+  margin-bottom: 0px;
+}
+
+.company-about__link {
+  position: relative;
+  display: block;
+  padding-left: 35px;
   font: 1.8em/1.1111111111em "Cuprum", Arial, sans-serif;/*18/20*/
   color: #000000;
+  outline: 1px solid red;
+}
+
+.company-about__link::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  transform: translate(0, -50%);
+  content: "";
 }
 
 .about-us__button {
+  margin-top: auto;
   width: 220px;
 }
 
@@ -1182,6 +1219,79 @@ body {
   outline: 1px solid red;
 }
 
-.contacts__button {
-  width: 300px;
+.contacts__map {
+  margin-bottom: 35px;
+}
+
+.about-us__button_contacts {
+  width: 100%;
+}
+
+/* FOOTER-TOP-------------------------------------------------- */
+.footer-top {
+  background-color: #32425c;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.content__footer-top {
+  position: relative;
+}
+
+.logo_footer {
+  position: absolute;
+  top: -53px;
+  left: 0;
+  width: 220px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  font-size: 1.5em;/*30*/
+  line-height: 1em;/*30*/
+}
+
+.footer-top__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  outline: 1px solid red;
+}
+
+
+.footer-top__menu_1 {
+  width: 550px;
+}
+
+.footer-top__menu-link,
+.footer-top__span {
+  font: 1.8em/1.3333333333em "Cuprum", Arial, sans-serif;/*18/24*/
+  color: #f1f5f7;
+}
+
+.footer-top__menu_2 {
+  width: 526px;
+}
+
+.footer-top__menu-link_2 {
+  color: #ffd180;
+}
+
+/* --FOOTER-Bottom----------------------------------------- */
+.footer-bottom {
+  background-color: #293449;
+}
+
+.footer-bottom__span {
+  font: 1.6em/1.125em "Cuprum", Arial, sans-serif;/*16/18*/
+  color: #f1f5f7;
+}
+
+.footer-bottom__icon-font {
+  font-size: 2em;
+  color: #f1f5f7;
+}
+
+.footer-bottom__link {
+  font: 1.6em/1.125em "Cuprum", Arial, sans-serif;/*16/18*/
+  color: #ffd180;
 }
