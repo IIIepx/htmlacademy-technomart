@@ -1060,19 +1060,19 @@ body {
 
 .services__switches::after {
   position: absolute;
-  top: -20px;
+  top: -40px;
   right: 0;
   content: "";
   width: 1px;
-  height: 220px;
+  height: 250px;
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: -1px 0 5px 1px rgba(0, 0, 0, 0.6);
+  outline: 1px solid red;
 }
-
 
 .services__label {
   display: block;
-  padding-top: 16px;
+  padding-top: 14px;
   padding-left: 23px;
   padding-bottom: 16px;
   font: 2.1em/1.4285714286em "Cuprum Bold", Arial, sans-serif;/*21/30*/
@@ -1096,7 +1096,6 @@ body {
   float: right;
   width: 620px;
   height: 183px;
-  overflow: hidden;
   outline: 1px solid red;
 }
 
@@ -1118,13 +1117,26 @@ body {
 }
 
 .services__description_slide {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .services__img {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.services__img_delivery {
+  bottom: 15px;
+}
+
+.services__img_warranty {
+  right: -8px;
+  bottom: 10px;
+}
+
+.services__img_credit {
+  right: -27px;
 }
 
 .services__button {
