@@ -127,6 +127,7 @@ body {
   transform: rotate(45deg);
   color: #ffffff;
   background-color: #ee3643;
+  z-index: 2;
 }
 
 .link-common {
@@ -890,33 +891,24 @@ body {
   padding-right: 7px;
   padding-bottom: 11px;
   font: 1.7em/1.0588235294em "PT Sans Bold", Arial, sans-serif;/*17/18*/
-  outline: 1px solid red;
-}
-
-.tecnomart-button_price::before {
-  position: absolute;
-  top: 0px;
-  right: -15px;
-  content: "";
-  width: 35px;
-  height: 15px;
-  transform: rotate(45deg);
-  background-color: #ffffff;
-}
-
-.feauture-item_4 .tecnomart-button_price {
-  margin-top: 19px;
 }
 
 .tecnomart-button_price::after {
   position: absolute;
-  bottom: 0px;
-  right: -15px;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: 20px solid blue;
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+  border-left-color: transparent;
+  border-right-color: #ffffff;
   content: "";
-  width: 35px;
-  height: 15px;
-  transform: rotate(-45deg);
-  background-color: #ffffff;
+}
+
+.feauture-item_4 .tecnomart-button_price {
+  margin-top: 19px;
 }
 
 .feature-item__item-new {
@@ -927,42 +919,75 @@ body {
   width: 100px;
 }
 /* --Buy-item__block---------------------------------- */
+.catalog__item:hover {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
 .buy-item {
+  display: none;
   position: absolute;
-  top: 40px;
+  top: 38px;
   left: 0;
-  display: block;
-  padding: 5px 0;
   width: inherit;
+  padding: 5px 0;
   background-color: #ffffff;
   z-index: 1;
   outline: 1px solid red;
 }
 
+.catalog__item:hover > .buy-item {
+  display: block;	
+}
+
+.buy-item__bookmark-btn,
 .buy-item__buy-btn {
-  margin-bottom: 5px;
+  margin: 0 auto;
+}
+
+.buy-item__buy-btn {
+  width: 125px;
+  margin-bottom: 13px;
+  padding: 9px 0 8px 0;
+  padding-left: 10px;
+  text-align: left;
   background-color: #63a63e;
   box-shadow: 0 3px 0 0px #367315;
 }
 
 .buy-item__icon-font {
+  margin-right: 20px;
   color: #ffffff;
   opacity: 0.3;
 }
 
+.buy-item__buy-btn:hover {
+  background-color: #5fbb2d; 
+}
+
+.buy-item__buy-btn:hover > .buy-item__icon-font,
+.buy-item__buy-btn:active > .buy-item__icon-font {
+  opacity: 1;
+}
+
+.buy-item__buy-btn:active {
+  background-color: #518534; 
+}
+
 .buy-item__bookmark-btn {
   width: 131px;
+  padding: 7px 0 7px 0; 
   background-color: #ffffff;
   color: #32425c;
-  border: 2px solid #367315;
+  border: 3px solid #63a63e;
 }
 
-.catalog__item:hover {
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+.buy-item__bookmark-btn:hover,
+.buy-item__bookmark-btn:active {
+  border-color: #32425c; 
 }
 
-.catalog__item::hover + .buy__item {
-  display: block;	
+.buy-item__bookmark-btn:active {
+  opacity: 0.3;
 }
 
 /* --MAIN-Index-catalog__Fesature-brends-----------------*/
@@ -983,11 +1008,22 @@ body {
   margin-right: 21px;
   margin-bottom: 20px;
   border: 1px solid #e5e5e5;
-  outline: 1px solid red;
 }
 
 .brends__elem:nth-of-type(4n) > .brends__link {
   margin-right: 0px;
+}
+
+.brends__link:hover  {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.brends__link:active  {
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.brends__link:active > .brends__img {
+  opacity: 0.3;
 }
 
 .brends__img {
@@ -1177,7 +1213,7 @@ body {
 }
 
 .about-us__title {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   font: 3em "Cuprum", Arial, sans-serif;/*30*/
   text-transform: uppercase;
   color: #000000;
@@ -1190,9 +1226,22 @@ body {
 }
 
 .about-us__description {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   font: 1.3em/1.8461538462em "PT Sans", Arial, sans-serif;/*13/24*/
   color: #000000;
+}
+
+.about-us__description_spacing {
+  margin-bottom: 25px;
+  letter-spacing: 0.0115384615em;/*0.3*/
+}
+
+.about-us__description_delivery {
+  margin-bottom: 21px;
+}
+
+.about-us__description_map {
+  margin-bottom: 35px;
 }
 
 .company-about__delivery-companies-list {
@@ -1200,7 +1249,7 @@ body {
 }
 
 .company-about__li {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .company-about__li:last-of-type {
@@ -1248,7 +1297,7 @@ body {
 /* FOOTER-TOP-------------------------------------------------- */
 .footer-top {
   background-color: #32425c;
-  padding-top: 40px;
+  padding-top: 25px;
   padding-bottom: 50px;
   outline: 1px solid red;
 }
@@ -1265,8 +1314,8 @@ body {
 
 .logo_footer {
   position: absolute;
-  top: -53px;
-  left: 0;
+  top: -38px;
+  left: 10px;
   width: 220px;
   padding-top: 17px;
   padding-bottom: 15px;
@@ -1329,14 +1378,15 @@ body {
 
 .content_footer-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 
 .footer-bottom__span {
-  float: left;
   display: block;
+  width: 100%;
+  margin-right: 160px;
   font: 1.6em/1.125em "Cuprum", Arial, sans-serif;/*16/18*/
   color: #f1f5f7;
 }
@@ -1371,8 +1421,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   display: block;
-  
-  
   font-size: 2em;
   color: #f1f5f7;
   
@@ -1380,6 +1428,8 @@ body {
 
 .footer__feedback {
   width: 300px;
+  margin-left: auto;
+  outline: 1px solid red;
 }
 
 .footer__feedback::after {
@@ -1389,7 +1439,8 @@ body {
 }
 
 .footer__feedback_col {
-  width: 140px;
+  width: 150px;
+  outline: 1px solid red;
 }
 
 .footer__feedback_col_left {
@@ -1398,14 +1449,12 @@ body {
 
 .footer__feedback_col_right {
   float: right;
+  width: 110px;
+  padding-left: 30px;
 }
 
 .footer-bottom__link {
+  display: block;
   font: 1.6em/1.125em "Cuprum", Arial, sans-serif;/*16/18*/
   color: #ffd180;
-}
-
-.footer-bottom__link_dev {
-  font-size: 1em;
-  line-height: 1em;
 }
