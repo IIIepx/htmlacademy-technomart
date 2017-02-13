@@ -1331,6 +1331,70 @@ body {
   width: 100%;
 }
 
+/* CATALOG ------------------------------------------------------*/
+.breadcrumbs {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+
+.breadcrumbs__link {
+  position: relative;
+  padding-right: 20px;
+  font: 1.3em/1.3846153846em "PT Sans", Arial, sans-serif;/*13/18*/
+  text-transform: uppercase;
+  color: #000;
+  outline: 1px solid red;
+}
+
+.breadcrumbs__link :after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "\3e";
+  font-size: 1.3em;
+  color: #c1c6ce;
+  outline: 1px solid red;
+}
+
+.breadcrumbs__icon-font {
+  color: #c1c6ce;
+}
+
+.index__title-block_catalog {
+  background-color: #f2f6f8;
+}
+
+.main-catalog {
+  padding-top: 20px;
+  padding-bottom: 55px;
+}
+
+.main-catalog::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.filter-section {
+  float: left;
+  width: 220px;
+  outline: 1px solid red;
+}
+
+.catalog__section-title {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  background-color: #f7f3ec;
+}
+
+.items-section {
+  float: right;
+  width: 700px;
+  outline: 1px solid red;
+}
+
 /* FOOTER-TOP-------------------------------------------------- */
 .footer-top {
   background-color: #32425c;
