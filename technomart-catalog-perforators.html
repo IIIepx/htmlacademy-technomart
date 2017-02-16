@@ -117,7 +117,7 @@
         </a>
         <a class="link-common breadcrumbs__link" href="#" title="В каталог">Каталог</a>
         <a class="link-common breadcrumbs__link" href="#" title="В Инструменты">Инструмент</a>
-        <span class="text-common breadcrumbs__link breadcrumbs__link_active">Перфораторы</span>
+        <span class="text-common breadcrumbs__link_active">Перфораторы</span>
       </div>
 
       <div class="index__title-block index__title-block_catalog">
@@ -130,19 +130,20 @@
             <h3 class="text-common catalog__section-title-h3">Фильтр</h3>
           </div>
           <form class="filter__form">
-            <div class="filter__section">
-              <h3 class="text-common filter__title">Цена</h3>
+            <div class="filter__block filter__block_price">
+              <h3 class="text-common filter__title">Цена:</h3>
               <div class="filter__input-range">
-                <input class="filter__input filter__input_range" type="range">
-                <div class="input-range__switch input-range__switch_1"></div>
-                <div class="input-range__switch input-range__switch_1"></div>
-                <div class="input-range__scale"></div>
-                <div class="inpur-range__bar"></div>
+                <div class="filter__input_range">
+                  <div class="input-range__switch input-range__switch_left"></div>
+                  <div class="input-range__switch input-range__switch_right"></div>
+                  <div class="input-range__scale"></div>
+                  <div class="input-range__bar"></div>
+                </div>
                 <div class="input-range__value input-range__value_start">0</div>
                 <div class="input-range__value input-range__value_end">30000</div>
               </div>
             </div>
-            <div class="filter__section">
+            <div class="filter__block">
               <h3 class="text-common filter__title">Производители</h3>
               <input id="bosch" class="filter__input filter__input_checkbox" type="checkbox" name="brends" checked>
               <label for="bosch" class="filter__label">Bosch</label>
@@ -155,7 +156,7 @@
               <input id="hitachi" class="filter__input filter__input_checkbox" type="checkbox" name="brends">
               <label for="hitachi" class="filter__label">Hitachi</label>
             </div>
-            <div class="filter__section">
+            <div class="filter__block">
               <h3 class="text-common filter__title">Питание</h3>
               <input id="accum" class="filter__input filter__input_radio" type="radio" name="power" value="accum" checked>
               <label for="accum" class="filter__label">Аккумуляторные</label>
