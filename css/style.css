@@ -213,11 +213,6 @@ body {
 
 
 /* --HEADER-------------------------------------------------------------------------- */
-
-.header-link_active {
-  background-color: #0c11d7;
-}
-
 /* --HEADER__Top-menu-- */
 
 .nav-menu_top {
@@ -226,18 +221,40 @@ body {
 
 .top-menu {
   position: relative;
-  display: flex;
+  padding-left: 220px;
+/*  display: flex;
   justify-content: flex-start;
   align-items: stretch;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 
-.top-menu__li:last-of-type {
+.top-menu::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+/*.top-menu__li:last-of-type {
   margin-left: auto;
+}*/
+
+.top-menu__left {
+  float: left;
+}
+
+.logo_header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  border-radius: 0;
 }
 
 .top-menu__element {
   display: inline-block;
+  vertical-align: top;
   padding-top: 11px;
   padding-bottom: 10px;
 }
@@ -257,8 +274,19 @@ body {
   opacity: 0.3;
 }
 
+.top-menu__form {
+  position: absolute;
+  top: 0;
+}
+
 .top-menu__icon-font_search {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  width: 25px;
+  height: 25px;
   font-size: 1.7em;
+  content: "";
 }
 
 .top-menu__element:hover > .top-menu__icon-font,
@@ -266,26 +294,8 @@ body {
   opacity: 1;
 }
 
-.logo_header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 220px;
-  padding-top: 10px;
-  padding-bottom: 8px;
-  border-radius: 0;
-}
-
-.top-menu__li_search {
-  margin-left: 220px;
-}
-
-.top-menu__form {
-  position: relative;
-}
-
 .top-menu__input_search {
-  width: 270px;
+  width: 260px;
   padding-left: 45px;
   font: 1.7em "Cuprum", Arial, sans-serif;/*17*/
   color: #000000;
@@ -323,15 +333,6 @@ body {
   opacity: 1;
 }
 
-.top-menu__icon-font_search {
-  position: absolute;
-  top: 9px;
-  left: 15px;
-  width: 25px;
-  height: 25px;
-  content: "";
-}
-
 .top-menu__input_search:focus + .top-menu__icon-font_search {
   color: #ee3643;
   opacity: 1;
@@ -347,6 +348,11 @@ body {
   cursor: pointer;
 }
 
+.top-menu__right {
+  float: right;
+  display: table;
+}
+
 .top-menu__link {
   width: 150px;
   font: 1.7em "Cuprum", Arial, sans-serif;/*17*/
@@ -359,16 +365,12 @@ body {
   margin-right: 8px;	
 }
 
-.top-menu__link_basket,
-.top-menu__link_bookmarks {
-  padding-left: 0;
-}
-
 .top-menu__link_basket-not-empty {
   background-color: #ee3643;
 }
 
 .top-menu__link_order {
+  margin: 0;
   background-color: #63a63e;
 }
 
