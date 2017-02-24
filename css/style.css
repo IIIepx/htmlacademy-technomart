@@ -295,8 +295,8 @@ body {
 }
 
 .top-menu__input_search {
-  width: 260px;
-  padding-left: 45px;
+  width: 258px;
+  padding-left: 48px;
   font: 1.7em "Cuprum", Arial, sans-serif;/*17*/
   color: #000000;
   background-color: #293449;
@@ -356,21 +356,45 @@ body {
 .top-menu__link {
   width: 150px;
   font: 1.7em "Cuprum", Arial, sans-serif;/*17*/
-  text-align: center;
   color: #ffffff;
+  outline: 1px solid red;
 }
 
+.top-menu__link_bookmarks,
+.top-menu__link_basket {
+  width: 132px;
+  padding-left: 18px;;
+  text-align: left;
+}
+  
 .top-menu__icon-font_basket,
 .top-menu__icon-font_bookmarks {
-  margin-right: 8px;	
+  margin-right: 4px;	
+}
+
+.top-menu__icon-font_basket-not-empty {
+  margin-right: 7px;
+}
+
+.top-menu__icon-font_bookmark-catalog  {
+  margin-right: 3px;
+}
+
+
+.top-menu__link_bookmarks_catalog {
+  width: 136px;
+  padding-left: 12px;
 }
 
 .top-menu__link_basket-not-empty {
+  width: 136px;
+  margin-right: -3px;
+  padding-left: 12px;
   background-color: #ee3643;
 }
 
 .top-menu__link_order {
-  margin: 0;
+  text-align: center;
   background-color: #63a63e;
 }
 
@@ -465,6 +489,10 @@ body {
   color: #32425c;
 }
 
+.user-menu__span_user-name {
+  margin-right: 22px;
+}
+
 .user-menu__li_login {
   width: 282px;
   padding-left: 33px;
@@ -494,24 +522,21 @@ body {
   padding-top: 10px;
   padding-bottom: 7px;
   padding-left: 13px;
-  
   text-align: left;
 }
 
 .user-menu__button_logout {
   float: right;
   min-width: 282px;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
   padding-right: 9px;
 }
 
-.user-menu__button_login:hover .user-menu__icon-font_login,
-.user-menu__button_login:hover .user-menu__icon-font_user {
+.user-menu__button_login:hover .user-menu__icon-font {
   opacity: 1;
 }
 
-.user-menu__button_login:active .user-menu__icon-font_login
-.user-menu__button_login:active .user-menu__icon-font_user {
+.user-menu__button_login:active .user-menu__icon-font {
   opacity: 0.2;
 }
 
@@ -548,13 +573,13 @@ body {
 
 .user-menu__user-link_orders {
   position: relative;
-  margin-right: 25px;
+  margin-right: 27px;
 }
 
 .user-menu__user-link_orders::after {
   position: absolute;
   top: 50%;
-  right: -15px;
+  right: -17px;
   width: 4px;
   height: 4px;
   background-color: #32425c;
@@ -1339,18 +1364,20 @@ body {
 
 /* CATALOG ------------------------------------------------------*/
 .breadcrumbs {
-  padding-top: 20px;
+  padding-top: 22px;
   padding-bottom: 20px;
   background-color: #fff;
 }
 
 .breadcrumbs__link,
 .breadcrumbs__link_active {
+  display: inline-block;
   position: relative;
   padding-left: 10px;
-  padding-right: 20px;
+  padding-right: 8px;
   font: 1.3em/1.3846153846em "PT Sans", Arial, sans-serif;/*13/18*/
   text-transform: uppercase;
+  vertical-align: top;
   color: #000;
 }
 
@@ -1364,6 +1391,8 @@ body {
 }
 
 .breadcrumbs__icon-font {
+  float: left;
+  font-size: 1.3em;
   color: #c1c6ce;
 }
 
