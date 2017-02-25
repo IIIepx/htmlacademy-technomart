@@ -106,11 +106,18 @@
     <div class="content content_index">
 
       <div class="breadcrumbs">
-        <a class="link-common breadcrumbs__link" href="#" title="На главную">
-          <span class="breadcrumbs__icon-font icon-home"></span>
+        <a class="link-common breadcrumbs__link breadcrumbs__link_home" href="#" title="На главную">
+          <span class="breadcrumbs__icon-font breadcrumbs__icon-font_home icon-home"></span>
+          <span class="breadcrumbs__icon-font breadcrumbs__icon-font_right icon-right"></span>
         </a>
-        <a class="link-common breadcrumbs__link" href="#" title="В каталог">Каталог</a>
-        <a class="link-common breadcrumbs__link" href="#" title="В Инструменты">Инструмент</a>
+        <a class="link-common breadcrumbs__link" href="#" title="В каталог">
+          <span class="breadcrumbs__link-name">Каталог</span>
+          <span class="breadcrumbs__icon-font breadcrumbs__icon-font_right icon-right"></span>
+        </a>
+        <a class="link-common breadcrumbs__link" href="#" title="В Инструменты">
+          <span class="breadcrumbs__link-name">Инструмент</span>
+          <span class="breadcrumbs__icon-font breadcrumbs__icon-font_right icon-right"></span>
+        </a>
         <span class="text-common breadcrumbs__link_active">Перфораторы</span>
       </div>
 
@@ -172,8 +179,8 @@
                 Hitachi
               </label>
             </div>
-            <div class="filter__block">
-              <h3 class="text-common filter__title">Питание:</h3>
+            <div class="filter__block filter__block_power">
+              <h3 class="text-common filter__title filter__title_power">Питание:</h3>
               <input id="accum" class="filter__input filter__input_radio" type="radio" name="power" value="accum" checked>
               <label for="accum" class="filter__label filter__label_for-radio">
                 <span class="icon-circle filter__icon-font filter__icon-font_unchecked"></span>
@@ -346,13 +353,12 @@
               <span class="text-common feature-item__old-price"><del></del></span>
               <a class="link-common technomart-button_red tecnomart-button_price" href="#">12500 Р.</a>
             </div>
-
-            <div class="catalog__items-nav">
-              <a href="#" class="link-common technomart-button_red catalog__button catalog__button_nav catalog__button_nav_active">1</a>
-              <a href="#" class="link-common catalog__button catalog__button_nav">2</a>
-              <a href="#" class="link-common catalog__button catalog__button_nav">3</a>
-              <a href="#" class="link-common catalog__button catalog__button_nav catalog__button_nav-next">Следующая</a>
-            </div>
+          </div>
+          <div class="catalog__items-nav">
+            <a href="#" class="link-common technomart-button_red catalog__button catalog__button_nav catalog__button_nav_active">1</a>
+            <a href="#" class="link-common catalog__button catalog__button_nav">2</a>
+            <a href="#" class="link-common catalog__button catalog__button_nav">3</a>
+            <a href="#" class="link-common catalog__button catalog__button_nav catalog__button_nav-next">Следующая</a>
           </div>
         </div>
       </div>
