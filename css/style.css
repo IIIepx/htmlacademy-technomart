@@ -130,6 +130,16 @@ body {
   border-radius: 3px;
 }
 
+.catalog__button_nav:hover,
+.filter__submit:hover {
+  border-color: #bdc6ca;
+}
+
+.catalog__button_nav:active,
+.filter__submit:active {
+  border-color: #ee3643;
+}
+
 .item-new {
   display: block;
   width: 90px;
@@ -535,7 +545,8 @@ body {
   opacity: 1;
 }
 
-.user-menu__button_login:active .user-menu__icon-font {
+.user-menu__button_login:active .user-menu__icon-font,
+.user-menu__button_login:active .user-menu__span_user-name {
   opacity: 0.2;
 }
 
@@ -568,6 +579,17 @@ body {
   font: 1.6em/1.125em "Cuprum", Arial, sans-serif;/*16/18*/
   text-decoration: underline;
   color: #32425c;
+}
+
+.user-menu__user-link:hover {
+  color: #ee3643;
+  text-decoration: underline;
+}
+
+.user-menu__user-link:active {
+  color: #32425c;
+  text-decoration: none;
+  opacity: 0.3; 
 }
 
 .user-menu__user-link_orders {
@@ -888,7 +910,7 @@ body {
   flex-direction: row;
   align-items: flex-start;
   align-content: space-between;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   padding-top: 17px;
 }
 
@@ -1076,13 +1098,14 @@ body {
   display: block;
   width: 217px;
   height: 141px;
-  margin-right: 21px;
+  margin-right: 20px;
   margin-bottom: 20px;
   border: 1px solid #e5e5e5;
 }
 
 .brends__elem:nth-of-type(4n) > .brends__link {
-  margin-right: 0px;
+  
+  margin-right: -1px;
 }
 
 .brends__link:hover  {
@@ -1469,7 +1492,7 @@ body {
 
 .input-range__switch {
   position: absolute;
-  top: 32px;
+  top: 30px;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -1572,6 +1595,7 @@ body {
   font: 1.5em/1.3333333333em "PT Sans", Arial, sans-serif;/*15/20*/
   text-transform: uppercase;
   color: #000;
+  cursor: pointer;
 }
 
 .filter__label_for-radio {
@@ -1600,6 +1624,20 @@ body {
   display: none;
 }
 
+.filter__icon-font_checked-box::before {
+  left: -5.1px;
+}
+
+#bosch:checked ~ label[for="bosch"] > .filter__icon-font_unchecked,
+#interskol:checked ~ label[for="interskol"] > .filter__icon-font_unchecked,
+#makita:checked ~ label[for="makita"] > .filter__icon-font_unchecked,
+#dewalt:checked ~ label[for="dewalt"] > .filter__icon-font_unchecked,
+#hitachi:checked ~ label[for="hitachi"] > .filter__icon-font_unchecked,
+#accum:checked ~ label[for="accum"] > .filter__icon-font_unchecked,
+#netw:checked ~ label[for="netw"] > .filter__icon-font_unchecked {
+  display: none;
+} 
+
 #bosch:checked ~ label[for="bosch"] > .filter__icon-font_checked,
 #interskol:checked ~ label[for="interskol"] > .filter__icon-font_checked,
 #makita:checked ~ label[for="makita"] > .filter__icon-font_checked,
@@ -1608,6 +1646,20 @@ body {
 #accum:checked ~ label[for="accum"] > .filter__icon-font_checked,
 #netw:checked ~ label[for="netw"] > .filter__icon-font_checked {
   display: block;
+} 
+
+.filter__label:hover > .filter__icon-font::before {
+  color: #b5b5b5;
+}
+
+#bosch:disabled ~ label[for="bosch"] > .filter__icon-font::before,
+#interskol:disabled ~ label[for="interskol"] > .filter__icon-font::before,
+#makita:disabled ~ label[for="makita"] > .filter__icon-font::before,
+#dewalt:disabled ~ label[for="dewalt"] > .filter__icon-font::before,
+#hitachi:disabled ~ label[for="hitachi"] > .filter__icon-font::before,
+#accum:disabled ~ label[for="accum"] > .filter__icon-font::before,
+#netw:disabled ~ label[for="netw"] > .filter__icon-font::before {
+  color: #e9e9e9;
 } 
 
 .filter__submit {
@@ -1659,6 +1711,10 @@ body {
 .catalog__sort-link:nth-of-type(3) {
   margin-left: 61px;
   margin-right: 35px;
+}
+
+.catalog__sort-link:hover {
+  opacity: 1;
 }
 
 .catalog__sort-link_active {
