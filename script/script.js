@@ -4,7 +4,16 @@
 $(document).ready(function () {
   "use strict";
 
-  // slider-code----------------------------------------
+/*event.preventDefault() check for IE9*/
+  $.fn.eventPreventDefaultSafe = function () {
+    if (event.preventDefault) {
+      event.preventDefault();
+    } else {
+      event.returnValue = false;
+    }
+  };
+  
+/* slider-code----------------------------------------*/
   $('.items-slider__icon-font-switch').hide();
   $('.items-list__item_slider').mouseover(function () {
     $('.items-slider__icon-font-switch').show();
@@ -45,14 +54,42 @@ $(document).ready(function () {
   };
   
   setInterval($.fn.sliderSwitch, 3000);
-
-  // va-tests---------------------------------------------
+  
+/*Modal windows(write-us, map)*/
+  
+  
+  $('.about-us__button_contacts').on('click', function () {
+    $.fn.eventPreventDefaultSafe();
+    $('.overlay').show('rotate');
+    $('.write-us_index').fadeIn('slow');
+  });
+  
+  $('.modal__close-btn').on('click', function () {
+    $.fn.eventPreventDefaultSafe();
+    $('.overlay').hide();
+    $('.write-us_index').fadeOut('slow');
+  });
+  
+  $('.contacts__map').on('click', function () {
+    $.fn.eventPreventDefaultSafe();
+    $('.overlay').show('rotate');
+    $('.map').fadeIn('slow');
+  });
+  
+  $('.modal__close-btn').on('click', function () {
+    $.fn.eventPreventDefaultSafe();
+    $('.overlay').hide();
+    $('.map').fadeOut('slow');
+  });
+  
+    
+/* va-tests---------------------------------------------*/
   $('.logo_header, .loho_footer').click(function () {
     $(this).effect("bounce", {
       times: 3
     }, "slow");
 
   });
-  // -----------------------------------------------------  
+
 
 });
