@@ -25,19 +25,19 @@ $(document).ready(function () {
   $.fn.sliderSwitch = function () {
     var
       $curInputChecked = $('.items-list__input:checked'),
-      $nextInputChecked = $curInputChecked.next(),
-      $prevInputChecked = $curInputChecked.prev();
+      $nextInput = $curInputChecked.next(),
+      $prevInput = $curInputChecked.prev();
     
     $curInputChecked.removeAttr('checked');
-    if ($nextInputChecked.prop('type') === 'radio') {
-      $nextInputChecked.prop('checked', 'checked');
+    if ($nextInput.prop('type') === 'radio') {
+      $nextInput.prop('checked', 'checked');
     } else {
-      $nextInputChecked = $('.items-list__input').first().prop('checked', 'checked');
+      $nextInput = $('.items-list__input').first().prop('checked', 'checked');
     }
     
     $('.items-slider__icon-font-switch_left').on('click', function () {
       if ($curInputChecked.prev().prop('type') === 'radio') {
-        $curInputChecked = $curInputChecked.prev().prop('checked', 'checked');
+        $curInputChecked = $prevInput.prop('checked', 'checked');
       } else {
         $curInputChecked = $('.items-list__input').last().prop('checked', 'checked');
       }
@@ -45,29 +45,20 @@ $(document).ready(function () {
     
     $('.items-slider__icon-font-switch_right').on('click', function () {
       if ($curInputChecked.next().prop('type') === 'radio') {
-        $curInputChecked = $curInputChecked.next().prop('checked', 'checked');
+        $curInputChecked = $nextInput.prop('checked', 'checked');
       } else {
         $curInputChecked = $('.items-list__input').first().prop('checked', 'checked');
       }
     });
-    
   };
   
   setInterval($.fn.sliderSwitch, 3000);
   
 /*Modal windows(write-us, map)*/
-  
-  
   $('.about-us__button_contacts').on('click', function () {
     $.fn.eventPreventDefaultSafe();
     $('.overlay').show('rotate');
     $('.write-us_index').fadeIn('slow');
-  });
-  
-  $('.modal__close-btn').on('click', function () {
-    $.fn.eventPreventDefaultSafe();
-    $('.overlay').hide();
-    $('.write-us_index').fadeOut('slow');
   });
   
   $('.contacts__map').on('click', function () {
@@ -79,17 +70,12 @@ $(document).ready(function () {
   $('.modal__close-btn').on('click', function () {
     $.fn.eventPreventDefaultSafe();
     $('.overlay').hide();
-    $('.map').fadeOut('slow');
+    $('.write-us_index, .map').fadeOut('slow');
   });
-  
     
 /* va-tests---------------------------------------------*/
-  $('.logo_header, .loho_footer').click(function () {
-    $(this).effect("bounce", {
-      times: 3
-    }, "slow");
-
+  $('.logo_header-index, .logo_footer-index').click(function () {
+    $(this).effect("bounce", {times: 3}, "slow");
   });
-
 
 });

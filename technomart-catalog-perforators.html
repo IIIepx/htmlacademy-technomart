@@ -8,9 +8,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Aacademy Technomart - Catalog</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"> -->
-  <link rel="stylesheet" href="css/jquery-ui.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <!--<link rel="stylesheet" href="css/jquery-ui.min.css">-->
+  <!--<link rel="stylesheet" href="css/style.css">-->
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -20,8 +21,8 @@
       <div class="content content_index">
         <div class="top-menu">
           <div class="top-menu__left">
-            <h1 classs="text-common technomart-logo_top">
-              <a class="link-common logo logo_header" href="#">Техномарт</a>
+            <h1 class="text-common technomart-logo_top">
+              <a class="link-common logo logo_header" href="index.html">Техномарт</a>
             </h1>
             <form class="top-menu__form" method="post">
               <input class="top-menu__element top-menu__input top-menu__input_search" type="search" placeholder="Поиск:">
@@ -96,10 +97,8 @@
             <a href="technomart-contacts.html" class="link-common bottom-menu__link">Контакты</a>
           </li>
         </ul>
-
       </div>
     </div>
-
   </header>
 
   <main class="main main_catalog">
@@ -178,13 +177,13 @@
               <h3 class="text-common filter__title filter__title_power">Питание:</h3>
               <input id="accum" class="filter__input filter__input_radio" type="radio" name="power" value="accum" checked>
               <label for="accum" class="filter__label filter__label_for-radio">
-                <span class="icon-circle filter__icon-font filter__icon-font_unchecked"></span>
-                <span class="icon-circle-dot filter__icon-font filter__icon-font_checked"></span> Аккумуляторные
+                <span class="icon-circle filter__icon-font filter__icon-font_unchecked filter__icon-font_radio"></span>
+                <span class="icon-circle-dot filter__icon-font filter__icon-font_checked filter__icon-font_radio"></span> Аккумуляторные
               </label>
               <input id="netw" class="filter__input filter__input_radio" type="radio" name="power" value="netw">
               <label for="netw" class="filter__label filter__label_for-radio">
-                <span class="icon-circle filter__icon-font filter__icon-font_unchecked"></span>
-                <span class="icon-circle-dot filter__icon-font filter__icon-font_checked"></span> Сетевые
+                <span class="icon-circle filter__icon-font filter__icon-font_unchecked filter__icon-font_radio"></span>
+                <span class="icon-circle-dot filter__icon-font filter__icon-font_checked filter__icon-font_radio"></span> Сетевые
               </label>
             </div>
             <input class="catalog__button filter__submit" type="submit" value="Показать">
@@ -374,8 +373,8 @@
     <div class="content content_footer-top">
       <div class="footer-top__top">
         <div class="footer-top__logo">
-          <h1 classs="text-common technomart-logo_top">
-              <a class="link-common logo logo_footer" href="#">Техномарт</a>
+          <h1 class="text-common technomart-logo_top">
+              <a class="link-common logo logo_footer" href="index.html">Техномарт</a>
             </h1>
         </div>
         <ul class="list-common footer-top__menu footer-top__menu_1">
@@ -454,11 +453,12 @@
     </div>
   </footer>
 
-  <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
-  <script src="script/jquery-3.1.1.min.js"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
-  <script src="script/jquery-ui.min.js"></script>
-  <script src="script/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!--<script src="script/jquery-3.1.1.min.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!--<script src="script/jquery-ui.min.js"></script>-->
+  <!--<script src="script/script.js"></script>-->
+  <script src="script/script.min.js"></script>
 
 </body>
 
