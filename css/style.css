@@ -2237,12 +2237,6 @@ body {
 }
 
 /*Map----------------------*/
-
-.map_no-js {
-  width: 940px;
-  margin: 0 auto;
-}
-
 .map {
   display: none;
   position: fixed;
@@ -2252,6 +2246,12 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 101;
+}
+
+.map_no-js {
+  display: block;
+  width: 940px;
+  margin: 0 auto;
 }
 
 /*Mediaqueries---------*/
