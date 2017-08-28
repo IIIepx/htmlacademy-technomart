@@ -4,15 +4,6 @@
 $(document).ready(function () {
   "use strict";
 
-/*event.preventDefault() check for IE9*/
-  $.fn.eventPreventDefaultSafe = function () {
-    if (event.preventDefault) {
-      event.preventDefault();
-    } else {
-      event.returnValue = false;
-    }
-  };
-  
 /* slider-code----------------------------------------*/
   $('.items-slider__icon-font-switch').hide();
   $('.items-list__item_slider').mouseover(function () {
@@ -55,20 +46,20 @@ $(document).ready(function () {
   setInterval($.fn.sliderSwitch, 3000);
   
 /*Modal windows(write-us, map)*/
-  $('.about-us__button_contacts').on('click', function () {
-    $.fn.eventPreventDefaultSafe();
+  $('.about-us__button_contacts').on('click', function (event) {
+    event.preventDefault(event);
     $('.overlay').show('rotate');
     $('.write-us_index').fadeIn('slow');
   });
   
-  $('.contacts__map').on('click', function () {
-    $.fn.eventPreventDefaultSafe();
+  $('.contacts__map').on('click', function (event) {
+    event.preventDefault(event);
     $('.overlay').show('rotate');
     $('.map').fadeIn('slow');
   });
   
-  $('.modal__close-btn').on('click', function () {
-    $.fn.eventPreventDefaultSafe();
+  $('.modal__close-btn').on('click', function (event) {
+    event.preventDefault(event);
     $('.overlay').hide();
     $('.write-us_index, .map').fadeOut('slow');
   });
